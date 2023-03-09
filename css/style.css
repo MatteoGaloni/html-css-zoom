@@ -8,17 +8,24 @@
     color: white;
 }
 body{
-    background-color: aqua;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 header{
-    height: 100px;
-    background-color:rgb(14, 4, 4)
+    height: 80px;
+    background-color:black;
 }
 
 .flex{
     display: flex;
+    
+}
+
+.alignCenter{
+align-items: center;
+margin: 6px;
 }
 
 .flexColumn{
@@ -53,12 +60,12 @@ header{
 
 .boxed{
     width: 1400px;
-    margin: 0 auto;    
-    background-color: blue;
+    margin: 0 auto;
 }
 
 .card{
     width: calc( 100% / 7 - 0.5em );
+    
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     position: relative;
@@ -83,6 +90,25 @@ img{
 /* ******Footer***** */
 
 footer{
-    height: 100px;
-    background-color: #1e1409;
+    height: 80px;
+    background-color: #222222;
+    font-size: 20px
+}
+
+.iconBottom{  
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.endMeeting{
+    color: red;
+}
+
+.alignItems{
+    align-items: center;
+}
+
+.iconBottom.Right{
+    background-color:#282b2b;
 }
