@@ -5,8 +5,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: aqua;
 }
 
-body{
-    background-color: aquamarine;
+header{
+    height: 100px;
+    background-color:rgb(14, 4, 4)
 }
+
+.flex{
+    display: flex;
+}
+
+.flexEnd{
+    justify-content: flex-end
+}
+
+/* ********Header******* */
+
+.topIcon{
+    align-items: center;
+    height: 30px;
+    background-color: lightslategrey;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5%;
+}
+
+/* ****main*** */
+
+
