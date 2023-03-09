@@ -9,6 +9,7 @@
 }
 body{
     background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -20,8 +21,16 @@ header{
     display: flex;
 }
 
+.flexWrap{
+    flex-wrap: wrap;
+}
+
 .flexEnd{
     justify-content: flex-end
+}
+
+.jcSpaceBtw{
+    justify-content: space-between;
 }
 
 /* ********Header******* */
@@ -38,3 +47,31 @@ header{
 /* ****main*** */
 
 
+.boxed{
+    width: 1400px;
+    margin: 0 auto;    
+    background-color: blue;
+}
+
+.card{
+    width: calc( 100% / 7 - 0.5em );
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    position: relative;
+
+}
+
+img{
+    display: block;
+    width: 100%
+    
+}
+
+.mic{
+    position: absolute;
+    bottom: 0%;
+    background-color: #251c1c4d;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+}
