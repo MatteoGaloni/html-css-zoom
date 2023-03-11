@@ -1,32 +1,21 @@
 
 /* ********General Settings****** */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
 }
+
+
 body{
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-header{
-    height: 80px;
-    background-color:black;
 }
 
 .flex{
-    display: flex;
-    
+    display: flex;    
 }
 
-.alignCenter{
-align-items: center;
-margin: 6px;
-}
 
 .flexColumn{
     flex-direction: column;
@@ -44,41 +33,46 @@ margin: 6px;
     justify-content: space-between;
 }
 
+.alignCenter{
+    align-items: center;
+}
+
 /* ********Header******* */
+
+header{
+    height: 80px;
+    background-color:black;
+}
 
 .topIcon{
     align-items: center;
-    height: 30px;
     background-color: lightslategrey;
     padding: 10px;
     margin: 5px;
-    border-radius: 5%;
+    border-radius: 8%;
+    height: 35%;
 }
 
 /* ****main*** */
 
-
-.boxed{
-    width: 1400px;
-    margin: 0 auto;
+main{
+    height: calc( 100vh - 160px );
 }
+
+.mainContainer{
+    margin: 0 50px;
+}
+
 
 .card{
-    width: calc( 100% / 7 - 0.5em );
-    
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    width: calc( 100% / 7 - 4px );
+    height: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
     position: relative;
-
 }
 
-img{
-    display: block;
-    width: 100%
-    
-}
-
-.mic{
+.user{
     position: absolute;
     bottom: 0%;
     background-color: #251c1c4d;
@@ -87,12 +81,20 @@ img{
     font-size: 12px;
 }
 
+img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 /* ******Footer***** */
 
 footer{
     height: 80px;
     background-color: #222222;
-    font-size: 20px
+    font-size: 20px;
+    width: 100vw;
+    position: fixed;
 }
 
 .iconBottom{  
@@ -105,10 +107,25 @@ footer{
     color: red;
 }
 
-.alignItems{
-    align-items: center;
-}
 
 .iconBottom.Right{
     background-color:#282b2b;
+    margin-right: 20px;
 }
+
+.iconBottom > div > span{
+    padding-top: 5px ;
+}
+
+.fontIcon{
+    font-size: 15px;
+}
+
+.iconBottom > div{
+    margin: 0px 5px;
+}
+
+.fa-share-from-square{
+    color: rgb(12, 196, 12);
+}
+
